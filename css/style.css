@@ -2685,7 +2685,7 @@ ul, ol {
 /* Toast System */
 #toast-container {
   position: fixed;
-  bottom: 7.25rem;
+  bottom: 8.5rem;
   right: 1.5rem;
   z-index: 99999;
   display: flex;
@@ -2728,7 +2728,7 @@ ul, ol {
    =================================================================== */
 .contribution-watermark {
   position: fixed;
-  bottom: 4.5rem;
+  bottom: 5.85rem;
   right: 1.25rem;
   z-index: 9990;
   display: inline-flex;
@@ -2889,7 +2889,7 @@ ul, ol {
   }
 
   .contribution-watermark {
-    bottom: 4.25rem;
+    bottom: 5.5rem;
     right: 0.85rem;
     font-size: 0.65rem;
     padding: 0.25rem 0.55rem;
