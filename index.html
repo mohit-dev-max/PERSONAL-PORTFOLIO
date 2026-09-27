@@ -1,0 +1,1464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MOHIT — Creative Developer & Startup Builder</title>
+  <meta name="description" content="Portfolio of Mohit, first-year B.Tech CSE student at JECRC University and aspiring startup builder. Exploring 3D web, software engineering, and product building.">
+  <meta name="keywords" content="Mohit, Creative Developer, Startup Builder, B.Tech CSE, JECRC University, Three.js, Portfolio, Web Development, Software Engineering">
+  <meta name="author" content="Mohit">
+  <meta name="theme-color" content="#050505">
+
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="MOHIT — Creative Developer & Startup Builder">
+  <meta property="og:description" content="I build digital experiences, explore ideas, and turn problems into products.">
+
+  <!-- Google Fonts: Space Grotesk + Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===================================================================
+       CUSTOM CURSOR (DESKTOP)
+       =================================================================== -->
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true">
+    <span class="cursor-label">EXPLORE ↗</span>
+  </div>
+
+  <!-- ===================================================================
+       PRELOADER
+       =================================================================== -->
+  <div id="preloader" role="status" aria-live="polite">
+    <div class="preloader-content">
+      <div class="preloader-brand">
+        MOHIT<span class="accent">.</span>
+      </div>
+      <div class="preloader-tag">Creative Developer · Startup Builder</div>
+      <div class="preloader-bar-wrap">
+        <div class="preloader-bar"></div>
+      </div>
+      <div class="preloader-counter">0%</div>
+    </div>
+  </div>
+
+  <!-- ===================================================================
+       FLOATING GLASS NAVBAR
+       =================================================================== -->
+  <header>
+    <nav class="navbar" id="main-nav" aria-label="Primary Navigation">
+      <a href="#hero" class="nav-brand" aria-label="Mohit Home">
+        MOHIT<span class="brand-dot"></span>
+      </a>
+
+      <div class="nav-links">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#ideas" class="nav-link">Ideas</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#journey" class="nav-link">Journey</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
+
+      <div class="nav-actions">
+        <!-- Web Audio Feedback Toggle -->
+        <button class="sound-toggle" id="sound-toggle-btn" title="Toggle Interface Audio" aria-label="Toggle Interface Audio">
+          <svg class="icon-sound-on" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:none;">
+            <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+            <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+          </svg>
+          <svg class="icon-sound-off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+            <line x1="23" y1="9" x2="17" y2="15"></line>
+            <line x1="17" y1="9" x2="23" y2="15"></line>
+          </svg>
+        </button>
+
+        <a href="#resume" class="btn-nav-resume btn-open-resume" role="button">
+          Resume <span class="arrow">↗</span>
+        </a>
+
+        <!-- Mobile Hamburger -->
+        <button class="nav-hamburger" id="nav-hamburger-btn" aria-label="Open Navigation Menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Mobile Nav Fullscreen Drawer -->
+  <div class="mobile-nav-drawer" id="mobile-nav-drawer" aria-hidden="true">
+    <div class="mobile-nav-links">
+      <a href="#about" class="mobile-nav-link">
+        <span>About</span>
+        <span class="link-num">01</span>
+      </a>
+      <a href="#skills" class="mobile-nav-link">
+        <span>Skills</span>
+        <span class="link-num">02</span>
+      </a>
+      <a href="#projects" class="mobile-nav-link">
+        <span>Projects</span>
+        <span class="link-num">03</span>
+      </a>
+      <a href="#ideas" class="mobile-nav-link">
+        <span>Ideas</span>
+        <span class="link-num">04</span>
+      </a>
+      <a href="#education" class="mobile-nav-link">
+        <span>Education</span>
+        <span class="link-num">05</span>
+      </a>
+      <a href="#journey" class="mobile-nav-link">
+        <span>Journey</span>
+        <span class="link-num">06</span>
+      </a>
+      <a href="#hackathons" class="mobile-nav-link">
+        <span>Hackathons</span>
+        <span class="link-num">07</span>
+      </a>
+      <a href="#github" class="mobile-nav-link">
+        <span>Code & GitHub</span>
+        <span class="link-num">08</span>
+      </a>
+      <a href="#contact" class="mobile-nav-link">
+        <span>Contact</span>
+        <span class="link-num">09</span>
+      </a>
+    </div>
+
+    <div>
+      <button class="btn-primary btn-open-resume" style="width: 100%; justify-content: center;">
+        View Resume ↗
+      </button>
+    </div>
+  </div>
+
+  <main>
+    <!-- ===================================================================
+         HERO SECTION — 3D DIGITAL EXPERIENCE
+         =================================================================== -->
+    <section class="hero-section" id="hero">
+      <!-- 3D Canvas Background -->
+      <div id="hero-canvas-container" aria-label="Interactive 3D Digital Sculpture"></div>
+
+      <!-- Atmospheric Ambient Glows -->
+      <div class="hero-ambient-glow" aria-hidden="true"></div>
+      <div class="hero-grid-bg" aria-hidden="true"></div>
+
+      <!-- 3D Scene Controls Overlay -->
+      <div class="scene-controls-overlay" aria-label="3D Experience Controls">
+        <button class="scene-btn" id="btn-toggle-wireframe" title="Toggle 3D Wireframe Cage">Wireframe</button>
+        <button class="scene-btn" id="btn-toggle-speed" title="Toggle Rotation Velocity">Speed 2x</button>
+      </div>
+
+      <div class="container hero-grid">
+        <!-- Hero Content (Left) -->
+        <div class="hero-content">
+          <div class="status-badge">
+            <span class="status-beacon"></span>
+            <span>Currently building & learning</span>
+          </div>
+
+          <h1 class="hero-title">
+            <span class="title-line">CREATIVE</span>
+            <span class="title-line">DEVELOPER &</span>
+            <span class="title-line accent-text">STARTUP BUILDER</span>
+          </h1>
+
+          <p class="hero-subtitle">
+            I build digital experiences, explore ideas, and turn problems into products.
+            First-year <strong>B.Tech Computer Science</strong> student at <strong>JECRC University</strong>.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn-primary">
+              Explore Projects
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 13l5 5 5-5M12 4v14"/></svg>
+            </a>
+            <a href="mailto:mohitpareek.dev@gmail.com" class="btn-secondary">
+              Email Mohit
+              <span style="color:var(--red-accent);">↗</span>
+            </a>
+          </div>
+
+          <!-- Verified Profile Links Strip (Direct Access) -->
+          <div class="hero-verified-links" aria-label="Verified Profile Links">
+            <a href="https://github.com/mohit-dev-max" target="_blank" rel="noopener noreferrer" class="verified-link-pill" title="View Mohit's GitHub Profile">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+              </svg>
+              GitHub ↗
+            </a>
+            <a href="https://www.linkedin.com/in/mohit-pareek-585956427/" target="_blank" rel="noopener noreferrer" class="verified-link-pill" title="Connect on LinkedIn">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+              </svg>
+              LinkedIn ↗
+            </a>
+            <a href="mailto:mohitpareek.dev@gmail.com" class="verified-link-pill" title="Send Email">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              mohitpareek.dev@gmail.com
+            </a>
+          </div>
+
+          <div class="hero-quick-meta">
+            <div class="meta-item">
+              <div class="meta-item-label">Academic Path</div>
+              <div class="meta-item-val">B.Tech CSE <span class="sub">// 1st Year</span></div>
+            </div>
+            <div class="meta-item">
+              <div class="meta-item-label">Institution</div>
+              <div class="meta-item-val">JECRC University <span class="sub">// Jaipur</span></div>
+            </div>
+            <div class="meta-item">
+              <div class="meta-item-label">Core Focus</div>
+              <div class="meta-item-val">Software <span class="sub">&amp; Products</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Architectural Photo Frame (Right) -->
+        <div class="hero-visual-frame">
+          <div class="photo-frame-container">
+            <div class="photo-frame">
+              <!-- Cyberpunk Corner Brackets -->
+              <div class="frame-corner corner-tl"></div>
+              <div class="frame-corner corner-tr"></div>
+              <div class="frame-corner corner-bl"></div>
+              <div class="frame-corner corner-br"></div>
+
+              <div class="frame-header">
+                <span class="frame-label">Identity // Portrait</span>
+                <span class="frame-sys-id">MHT-2024-CSE</span>
+              </div>
+
+              <!-- Interactive Photo Display Frame -->
+              <div class="photo-display" id="photo-display-target" title="Click or Drag & Drop your portrait here">
+                <img id="photo-display-img" class="photo-display-img" alt="Mohit - Creative Developer Portrait">
+
+                <div class="photo-placeholder-ui">
+                  <div class="photo-avatar-silhouette">
+                    <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                      <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                      <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                  </div>
+                  <h3 class="photo-title">YOUR PHOTO HERE</h3>
+                  <p class="photo-hint">Drag &amp; drop or click to upload your real portrait</p>
+                  <button type="button" class="btn-upload-trigger" id="btn-upload-photo">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+                    Upload Photo
+                  </button>
+                </div>
+              </div>
+
+              <!-- Hidden file input for custom photo upload -->
+              <input type="file" id="photo-file-input" accept="image/*">
+
+              <div class="photo-frame-footer">
+                <span class="frame-role-tag">MOHIT</span>
+                <span class="frame-status-dot">
+                  <span></span> Ready to Build
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll Indicator -->
+      <a href="#about" class="hero-scroll-indicator" aria-label="Scroll to About Section">
+        <div class="scroll-mouse">
+          <div class="scroll-wheel"></div>
+        </div>
+        <span>SCROLL</span>
+      </a>
+    </section>
+
+    <!-- ===================================================================
+         01 // ABOUT SECTION — EDITORIAL STORY
+         =================================================================== -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-headline-wrap">
+            <div class="section-kicker">
+              <span class="kicker-line"></span>
+              01 // PHILOSOPHY
+            </div>
+            <h2 class="about-large-quote">
+              A developer in the making. <br>
+              <span class="red-highlight">A builder by mindset.</span>
+            </h2>
+
+            <div class="about-metadata-badges">
+              <span class="meta-pill"><span class="pill-dot"></span> Student</span>
+              <span class="meta-pill"><span class="pill-dot"></span> Builder</span>
+              <span class="meta-pill"><span class="pill-dot"></span> Explorer</span>
+              <span class="meta-pill"><span class="pill-dot"></span> Learning</span>
+            </div>
+          </div>
+
+          <div class="about-narrative">
+            <p>
+              I am <strong>Mohit</strong>, currently in my first year pursuing a <strong>B.Tech in Computer Science &amp; Engineering at JECRC University</strong>. 
+              My journey into technology didn't start with just memorizing syntax—it began with the excitement of turning ideas into functional, interactive tools.
+            </p>
+            <p>
+              Rather than waiting for years to build, I learn by doing: breaking down complex logic, coding prototypes from scratch, experimenting with modern web systems, and thinking deeply about <strong>user experience and startup viability</strong>.
+            </p>
+
+            <div class="about-feature-box">
+              <div class="about-feature-title">Product-First Engineering</div>
+              <div class="about-feature-desc">
+                I view software as a medium to solve tangible problems. Code is the vehicle, but product clarity, user delight, and genuine utility are the destination.
+              </div>
+            </div>
+
+            <p>
+              I don't claim decades of senior mastery. What I bring is <strong>unrelenting curiosity</strong>, a strong engineering foundation, sharp design instincts, and the discipline to iterate until something feels exceptional.
+            </p>
+
+            <div class="about-stats-grid">
+              <div class="about-stat-card">
+                <div class="stat-number">01<span class="plus">st</span></div>
+                <div class="stat-label">Year B.Tech CSE</div>
+              </div>
+              <div class="about-stat-card">
+                <div class="stat-number">100<span class="plus">%</span></div>
+                <div class="stat-label">Curiosity &amp; Drive</div>
+              </div>
+              <div class="about-stat-card">
+                <div class="stat-number">∞</div >
+                <div class="stat-label">Ideas &amp; Iterations</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         02 // SKILLS SECTION — HONEST & INTERACTIVE
+         =================================================================== -->
+    <section class="section" id="skills" style="background-color: var(--bg-soft);">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-kicker">
+            <span class="kicker-line"></span>
+            02 // CAPABILITIES
+          </div>
+          <h2 class="section-title">Technical Foundation &amp; Tooling</h2>
+          <p class="section-desc">
+            An honest representation of the technologies I actively build with, practice daily, and explore. No fabricated percentages—just genuine tools in my engineering arsenal.
+          </p>
+        </div>
+
+        <!-- Filter Navigation -->
+        <div class="skills-filter-nav" role="tablist">
+          <button class="filter-btn active" data-filter="all">All Disciplines</button>
+          <button class="filter-btn" data-filter="programming">Programming</button>
+          <button class="filter-btn" data-filter="development">Development</button>
+          <button class="filter-btn" data-filter="tools">Tools &amp; Workflow</button>
+          <button class="filter-btn" data-filter="exploring">Exploring</button>
+        </div>
+
+        <div class="skills-grid">
+          <!-- C / C++ -->
+          <div class="skill-card" data-category="programming">
+            <div class="skill-header">
+              <div class="skill-icon-wrap">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+              </div>
+              <span class="skill-level-tag foundation">Core Foundation</span>
+            </div>
+            <h3 class="skill-name">C / C++</h3>
+            <p class="skill-desc">Algorithmic foundations, pointers, memory management, and data structure implementations taught and practiced in coursework.</p>
+            <div class="skill-footer">
+              <span>Category: Programming</span>
+              <span class="skill-usage">DSA / Systems</span>
+            </div>
+          </div>
+
+          <!-- JavaScript (ES6+) -->
+          <div class="skill-card" data-category="development">
+            <div class="skill-header">
+              <div class="skill-icon-wrap">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+              </div>
+              <span class="skill-level-tag active-tech">Actively Building</span>
+            </div>
+            <h3 class="skill-name">Modern JavaScript</h3>
+            <p class="skill-desc">ES6+ syntax, asynchronous programming, DOM manipulation, modular architecture, and client-side logic.</p>
+            <div class="skill-footer">
+              <span>Category: Development</span>
+              <span class="skill-usage">App Logic</span>
+            </div>
+          </div>
+
+          <!-- HTML5 & Semantic Web -->
+          <div class="skill-card" data-category="development">
+            <div class="skill-header">
+              <div class="skill-icon-wrap">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+              </div>
+              <span class="skill-level-tag active-tech">Actively Building</span>
+            </div>
+            <h3 class="skill-name">HTML5 &amp; Accessibility</h3>
+            <p class="skill-desc">Clean semantic hierarchy, SEO optimization, accessible ARIA patterns, and robust structure for all interfaces.</p>
+            <div class="skill-footer">
+              <span>Category: Development</span>
+              <span class="skill-usage">Structure</span>
+            </div>
+          </div>
+
+          <!-- CSS3 & UI Craft -->
+          <div class="skill-card" data-category="development">
+            <div class="skill-header">
+              <div class="skill-icon-wrap">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+              </div>
+              <span class="skill-level-tag active-tech">Actively Building</span>
+            </div>
+            <h3 class="skill-name">Modern CSS &amp; UI Craft</h3>
+            <p class="skill-desc">Glassmorphism, CSS Grid/Flexbox, custom properties, micro-animations, and fluid responsive design across viewports.</p>
+            <div class="skill-footer">
+              <span>Category: Development</span>
+              <span class="skill-usage">Visual Craft</span>
+            </div>
+          </div>
+
+          <!-- Git & GitHub -->
+          <div class="skill-card" data-category="tools">
+            <div class="skill-header">
+              <div class="skill-icon-wrap">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="6" y1="3" x2="6" y2="15"></line><circle cx="18" cy="6" r="3"></circle><circle cx="6" cy="18" r="3"></circle><path d="M18 9a9 9 0 0 1-9 9"></path></svg>
+              </div>
+              <span class="skill-level-tag active-tech">Daily Workflow</span>
+            </div>
+            <h3 class="skill-name">Git &amp; GitHub</h3>
+            <p class="skill-desc">Version control, atomic commits, branching strategies, collaborative repository management, and open-source hygiene.</p>
+            <div class="skill-footer">
+              <span>Category: Tools</span>
+              <span class="skill-usage">CLI &amp; Remotes</span>
+            </div>
+          </div>
+
+          <!-- Python Fundamentals -->
+          <div class="skill-card" data-category="programming">
+            <div class="skill-header">
+              <div class="skill-icon-wrap">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="4 17 10 11 4 5"></polyline><line x1="12" y1="19" x2="20" y2="19"></line></svg>
+              </div>
+              <span class="skill-level-tag foundation">Foundational</span>
+            </div>
+            <h3 class="skill-name">Python Basics</h3>
+            <p class="skill-desc">General syntax, scripting, automation experiments, problem-solving, and foundational computer science exercises.</p>
+            <div class="skill-footer">
+              <span>Category: Programming</span>
+              <span class="skill-usage">Scripting</span>
+            </div>
+          </div>
+
+          <!-- Three.js & WebGL -->
+          <div class="skill-card" data-category="exploring">
+            <div class="skill-header">
+              <div class="skill-icon-wrap">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path></svg>
+              </div>
+              <span class="skill-level-tag exploring">Exploring</span>
+            </div>
+            <h3 class="skill-name">Three.js &amp; 3D Web</h3>
+            <p class="skill-desc">Exploring WebGL scenes, lighting models, camera matrices, geometric meshes, and interactive spatial experiences.</p>
+            <div class="skill-footer">
+              <span>Category: Exploring</span>
+              <span class="skill-usage">Creative Tech</span>
+            </div>
+          </div>
+
+          <!-- React & Component Systems -->
+          <div class="skill-card" data-category="exploring">
+            <div class="skill-header">
+              <div class="skill-icon-wrap">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+              </div>
+              <span class="skill-level-tag exploring">Exploring</span>
+            </div>
+            <h3 class="skill-name">React Basics</h3>
+            <p class="skill-desc">Understanding components, props, state hooks, reactive UI flows, and modular front-end architecture.</p>
+            <div class="skill-footer">
+              <span>Category: Exploring</span>
+              <span class="skill-usage">SPA Framework</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         03 // PROJECTS SECTION — EDITORIAL SHOWCASE
+         =================================================================== -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-kicker">
+            <span class="kicker-line"></span>
+            03 // CREATIONS
+          </div>
+          <h2 class="section-title">Things I'm building</h2>
+          <p class="section-desc">
+            Product concepts, functional prototypes, and experiments. Built to bridge the gap between abstract computer science and tangible user utility.
+          </p>
+        </div>
+
+        <div class="projects-editorial-list">
+          <!-- Featured Large Project -->
+          <article class="project-card-featured">
+            <div class="project-visual-side">
+              <div class="project-mockup-canvas">
+                <div class="project-interactive-preview">
+                  <div class="preview-browser-bar">
+                    <span class="browser-dot"></span>
+                    <span class="browser-dot"></span>
+                    <span class="browser-dot"></span>
+                  </div>
+                  <div class="preview-body-content">
+                    <div class="preview-chip-badge">NEXUS // CANVAS</div>
+                    <div class="preview-wireframe-lines">
+                      <div class="w-line" style="width: 75%;"></div>
+                      <div class="w-line" style="width: 45%;"></div>
+                      <div class="w-line" style="width: 60%; background: var(--red-primary);"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-info-side">
+              <div>
+                <div class="project-status-bar">
+                  <span class="project-index-num">PROJECT 01 // FEATURED</span>
+                  <span class="project-status-tag">In Active Build</span>
+                </div>
+
+                <h3 class="project-title">Nexus Canvas</h3>
+                <p class="project-brief">
+                  An interactive spatial whiteboard for engineering students to visually map and connect computer science mental models, algorithms, and system dependencies.
+                </p>
+
+                <div class="project-problem-solution">
+                  <div class="ps-item">
+                    <span class="ps-label">The Problem</span>
+                    <span class="ps-text">Technical documentation is static and linear, making multi-dimensional systems architecture hard for beginners to intuit.</span>
+                  </div>
+                  <div class="ps-item">
+                    <span class="ps-label">The Solution</span>
+                    <span class="ps-text">An infinite 2D/3D visual canvas connecting code snippets, data flow vectors, and algorithmic transitions into an interactive knowledge map.</span>
+                  </div>
+                </div>
+
+                <div class="project-tech-tags">
+                  <span class="tech-tag">JavaScript ES6</span>
+                  <span class="tech-tag">HTML5 Canvas</span>
+                  <span class="tech-tag">Three.js</span>
+                  <span class="tech-tag">LocalStorage</span>
+                </div>
+              </div>
+
+              <div class="project-action-links">
+                <a href="https://github.com/mohit-dev-max/PERSONAL-PORTFOLIO" target="_blank" rel="noopener noreferrer" class="btn-project-link">
+                  GitHub ↗
+                </a>
+                <a href="mailto:mohitpareek.dev@gmail.com" class="btn-project-link">
+                  Request Demo / Prototype <span class="arrow">↗</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Secondary Projects Grid -->
+          <div class="projects-secondary-grid">
+            <!-- Project 02 -->
+            <article class="project-card-sub">
+              <div>
+                <div class="project-status-bar">
+                  <span class="project-index-num">PROJECT 02</span>
+                  <span class="project-status-tag">Prototype</span>
+                </div>
+
+                <h3 class="project-title" style="font-size: 1.6rem;">AlgoPulse Sandbox</h3>
+                <p class="project-brief">
+                  Visual algorithm sandbox designed to animate sorting, tree traversals, and pointer shifts step-by-step with state inspection.
+                </p>
+
+                <div class="project-problem-solution">
+                  <div class="ps-item">
+                    <span class="ps-label">Problem</span>
+                    <span class="ps-text">Stepping through recursive calls on paper is confusing for new CS students.</span>
+                  </div>
+                  <div class="ps-item">
+                    <span class="ps-label">Solution</span>
+                    <span class="ps-text">Visual bar and node animations illustrating stack frames and time complexity in real-time.</span>
+                  </div>
+                </div>
+
+                <div class="project-tech-tags">
+                  <span class="tech-tag">C++ Logic</span>
+                  <span class="tech-tag">Modern JS</span>
+                  <span class="tech-tag">CSS Keyframes</span>
+                </div>
+              </div>
+
+              <div class="project-action-links" style="margin-top: 1.5rem;">
+                <a href="https://github.com/mohit-dev-max" target="_blank" rel="noopener noreferrer" class="btn-project-link">
+                  GitHub ↗
+                </a>
+              </div>
+            </article>
+
+            <!-- Project 03 -->
+            <article class="project-card-sub">
+              <div>
+                <div class="project-status-bar">
+                  <span class="project-index-num">PROJECT 03</span>
+                  <span class="project-status-tag">Design &amp; Specs</span>
+                </div>
+
+                <h3 class="project-title" style="font-size: 1.6rem;">FounderZero Canvas</h3>
+                <p class="project-brief">
+                  A distraction-free lean validation framework for student founders to formulate hypotheses and test problem-solution fit.
+                </p>
+
+                <div class="project-problem-solution">
+                  <div class="ps-item">
+                    <span class="ps-label">Problem</span>
+                    <span class="ps-text">Young builders jump straight to code before verifying if anyone actually has the problem.</span>
+                  </div>
+                  <div class="ps-item">
+                    <span class="ps-label">Solution</span>
+                    <span class="ps-text">Guided markdown questionnaire generating one-page structured validation matrices.</span>
+                  </div>
+                </div>
+
+                <div class="project-tech-tags">
+                  <span class="tech-tag">Modern JS</span>
+                  <span class="tech-tag">Markdown Parser</span>
+                  <span class="tech-tag">Design Systems</span>
+                </div>
+              </div>
+
+              <div class="project-action-links" style="margin-top: 1.5rem;">
+                <a href="#ideas" class="btn-project-link">
+                  Explore Product Thesis <span class="arrow">↗</span>
+                </a>
+              </div>
+            </article>
+
+            <!-- Project 04 // Clean Editable Placeholder -->
+            <article class="project-card-sub project-card-placeholder">
+              <div>
+                <div class="project-status-bar">
+                  <span class="project-index-num">PROJECT 04</span>
+                  <span class="placeholder-badge">
+                    <span class="status-beacon" style="width:6px; height:6px;"></span>
+                    Incubation
+                  </span>
+                </div>
+
+                <h3 class="project-title" style="font-size: 1.6rem; color: var(--text-muted);">Next Build Slot</h3>
+                <p class="project-brief">
+                  Currently conducting user interviews and experimenting with WebGL shaders and fullstack APIs for the next major release.
+                </p>
+
+                <div class="project-problem-solution" style="border-style: dashed;">
+                  <div class="ps-item">
+                    <span class="ps-label">Status</span>
+                    <span class="ps-text">Reserved slot ready for Mohit's upcoming hackathon or production software release.</span>
+                  </div>
+                </div>
+
+                <div class="project-tech-tags">
+                  <span class="tech-tag">In Research</span>
+                  <span class="tech-tag">Coming Soon</span>
+                </div>
+              </div>
+
+              <div class="project-action-links" style="margin-top: 1.5rem;">
+                <span class="btn-project-link" style="color: var(--text-dim);">
+                  Stay Tuned ↗
+                </span>
+              </div>
+            </article>
+
+            <!-- Project 05 // Clean Editable Placeholder -->
+            <article class="project-card-sub project-card-placeholder">
+              <div>
+                <div class="project-status-bar">
+                  <span class="project-index-num">PROJECT 05</span>
+                  <span class="placeholder-badge">
+                    <span class="status-beacon" style="width:6px; height:6px;"></span>
+                    Open Pipeline
+                  </span>
+                </div>
+
+                <h3 class="project-title" style="font-size: 1.6rem; color: var(--text-muted);">Open-Source Experiment</h3>
+                <p class="project-brief">
+                  Modular component library and developer tooling experiment currently in early architecture phase.
+                </p>
+
+                <div class="project-problem-solution" style="border-style: dashed;">
+                  <div class="ps-item">
+                    <span class="ps-label">Status</span>
+                    <span class="ps-text">Ready to integrate live repository URL and release changelog.</span>
+                  </div>
+                </div>
+
+                <div class="project-tech-tags">
+                  <span class="tech-tag">Open Source</span>
+                  <span class="tech-tag">Modular Architecture</span>
+                </div>
+              </div>
+
+              <div class="project-action-links" style="margin-top: 1.5rem;">
+                <span class="btn-project-link" style="color: var(--text-dim);">
+                  In Pipeline ↗
+                </span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         04 // STARTUP & IDEAS SECTION — CONNECTED NODE CANVAS
+         =================================================================== -->
+    <section class="section" id="ideas" style="background-color: var(--bg-soft);">
+      <div class="container">
+        <div class="ideas-wrapper">
+          <!-- Animated Node Canvas -->
+          <canvas id="ideas-node-canvas"></canvas>
+
+          <div class="ideas-intro-bar">
+            <div class="section-kicker">
+              <span class="kicker-line"></span>
+              04 // PRODUCT MINDSET
+            </div>
+            <h2 class="section-title">Ideas worth building</h2>
+            <p class="section-desc">
+              I don't only write code—I observe friction, analyze consumer habits, and formulate product hypotheses. These are problems I believe deserve elegant solutions.
+            </p>
+          </div>
+
+          <div class="ideas-grid">
+            <!-- Idea 1 -->
+            <div class="idea-card active" data-node="0">
+              <span class="idea-status-pill status-researching">Status: Researching</span>
+              <h3 class="idea-title">PeerCraft Network</h3>
+
+              <div class="idea-detail-section">
+                <div>
+                  <div class="idea-row-label">Problem Observed</div>
+                  <div class="idea-row-val">First-year engineers find it daunting to locate peer builders with complementary skills for hackathons.</div>
+                </div>
+                <div>
+                  <div class="idea-row-label">Product Idea</div>
+                  <div class="idea-row-val">Hyper-local campus builder exchange matching students by verified skill sprints rather than resumes.</div>
+                </div>
+                <div>
+                  <div class="idea-row-label">Why It Matters</div>
+                  <div class="idea-row-val">Catalyzes grassroots student entrepreneurship and cross-disciplinary technical collaboration.</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Idea 2 -->
+            <div class="idea-card" data-node="1">
+              <span class="idea-status-pill status-validating">Status: Validating</span>
+              <h3 class="idea-title">CodeLens Runtime</h3>
+
+              <div class="idea-detail-section">
+                <div>
+                  <div class="idea-row-label">Problem Observed</div>
+                  <div class="idea-row-val">Beginner programmers memorize syntax without building an intuition for stack memory and pointers.</div>
+                </div>
+                <div>
+                  <div class="idea-row-label">Product Idea</div>
+                  <div class="idea-row-val">Lightweight browser visualizer that renders hardware memory allocation dynamically alongside raw code.</div>
+                </div>
+                <div>
+                  <div class="idea-row-label">Why It Matters</div>
+                  <div class="idea-row-val">Removes the intimidation barrier from systems programming and core C/C++ fundamentals.</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Idea 3 -->
+            <div class="idea-card" data-node="2">
+              <span class="idea-status-pill status-exploring">Status: Exploring</span>
+              <h3 class="idea-title">PitchFlow Deck Engine</h3>
+
+              <div class="idea-detail-section">
+                <div>
+                  <div class="idea-row-label">Problem Observed</div>
+                  <div class="idea-row-val">Student founders waste days wrestling complex slide tools instead of sharpening their value proposition.</div>
+                </div>
+                <div>
+                  <div class="idea-row-label">Product Idea</div>
+                  <div class="idea-row-val">Zero-friction Markdown-to-Pitch engine generating investor-ready, minimalist typography slides instantly.</div>
+                </div>
+                <div>
+                  <div class="idea-row-label">Why It Matters</div>
+                  <div class="idea-row-val">Allows builders to focus 100% on product-market clarity and concise storytelling.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         05 // EDUCATION SECTION — TIMELINE
+         =================================================================== -->
+    <section class="section" id="education">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-kicker">
+            <span class="kicker-line"></span>
+            05 // ACADEMICS
+          </div>
+          <h2 class="section-title">Education &amp; Foundation</h2>
+          <p class="section-desc">
+            Formal computer science training grounding creative development in core engineering discipline.
+          </p>
+        </div>
+
+        <div class="timeline-track">
+          <!-- JECRC University -->
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-card">
+              <div class="timeline-period">2024 — 2028 (IN PROGRESS // YEAR 01)</div>
+              <h3 class="timeline-title">B.Tech — Computer Science &amp; Engineering</h3>
+              <div class="timeline-institution">JECRC University · Jaipur, Rajasthan, India</div>
+
+              <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; margin-bottom: 1rem;">
+                Enrolled in the undergraduate Computer Science program, developing a strong foundation in computational mathematics, programming logic, data structures, and computer organization.
+              </p>
+
+              <div>
+                <span style="font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--red-accent);">
+                  Coursework &amp; Subject Areas
+                </span>
+                <div class="coursework-chips">
+                  <span class="course-chip">Data Structures &amp; Algorithms</span>
+                  <span class="course-chip">Object-Oriented Programming</span>
+                  <span class="course-chip">Discrete Mathematics</span>
+                  <span class="course-chip">Digital Electronics</span>
+                  <span class="course-chip">Operating Systems Principles</span>
+                </div>
+              </div>
+
+              <div style="margin-top: 1.5rem; border-top: 1px solid var(--border-color); padding-top: 1rem;">
+                <span style="font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-dim);">
+                  Campus Involvement
+                </span>
+                <p style="font-size: 0.88rem; color: var(--text-muted); margin-top: 0.35rem;">
+                  Active participant in campus coding societies, hackathon preparation groups, and university innovation hubs.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         06 // HACKATHONS SECTION — PREPARED & EXPANDABLE
+         =================================================================== -->
+    <section class="section" id="hackathons" style="background-color: var(--bg-soft);">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-kicker">
+            <span class="kicker-line"></span>
+            06 // COMPETITIONS
+          </div>
+          <h2 class="section-title">Hackathons &amp; Sprints</h2>
+          <p class="section-desc">
+            Building, experimenting, and preparing for the next challenge. Fast-paced problem-solving environments where code meets immediate execution.
+          </p>
+        </div>
+
+        <div class="hackathon-cards-wrap">
+          <!-- Hackathon Slot 1 -->
+          <div class="hackathon-card">
+            <span class="hackathon-badge">Target Sprint // 2024-2025</span>
+            <h3 class="hackathon-name">Smart India Hackathon (SIH) Preparation</h3>
+            <p class="hackathon-desc">
+              Currently forming team dynamics, conducting domain research, and defining architectural roadmaps for upcoming national-level problem statements.
+            </p>
+            <div class="hackathon-meta-list">
+              <div>
+                <div class="hack-meta-label">Primary Role</div>
+                <div class="hack-meta-val">Frontend &amp; Product Architecture</div>
+              </div>
+              <div>
+                <div class="hack-meta-label">Phase</div>
+                <div class="hack-meta-val">Problem Selection &amp; Mockups</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hackathon Slot 2 -->
+          <div class="hackathon-card">
+            <span class="hackathon-badge">University &amp; Regional Sprints</span>
+            <h3 class="hackathon-name">24-Hour Campus Buildathons</h3>
+            <p class="hackathon-desc">
+              Dedicated build slots configured for upcoming university hackathons, fast MVP prototyping sessions, and collaborative software sprints.
+            </p>
+            <div class="hackathon-meta-list">
+              <div>
+                <div class="hack-meta-label">Focus</div>
+                <div class="hack-meta-val">Rapid MVP Execution</div>
+              </div>
+              <div>
+                <div class="hack-meta-label">Status</div>
+                <div class="hack-meta-val">Open for Challenge Entry</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         07 // JOURNEY SECTION — ROADMAP
+         =================================================================== -->
+    <section class="section" id="journey">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-kicker">
+            <span class="kicker-line"></span>
+            07 // ROADMAP
+          </div>
+          <h2 class="section-title">My Journey</h2>
+          <p class="section-desc">
+            How a curiosity for how computers think transformed into a disciplined drive to build real products.
+          </p>
+        </div>
+
+        <div class="journey-grid">
+          <!-- Step 1 -->
+          <div class="journey-milestone-card">
+            <div class="journey-step-num">01</div>
+            <div class="journey-date">2024 · The College Milestone</div>
+            <h3 class="journey-step-title">Enrolling in B.Tech CSE</h3>
+            <p class="journey-step-desc">
+              Began undergraduate Computer Science studies at JECRC University, committing to strong computational logic and software engineering fundamentals.
+            </p>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="journey-milestone-card">
+            <div class="journey-step-num">02</div>
+            <div class="journey-date">Foundation Phase</div>
+            <h3 class="journey-step-title">Programming Logic in C &amp; C++</h3>
+            <p class="journey-step-desc">
+              Tackled memory pointers, algorithmic complexity, and structured programming, building respect for how computing works beneath high-level abstractions.
+            </p>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="journey-milestone-card">
+            <div class="journey-step-num">03</div>
+            <div class="journey-date">Creative Pivot</div>
+            <h3 class="journey-step-title">Discovering the Creative Web</h3>
+            <p class="journey-step-desc">
+              Fell in love with interactive web technologies—transforming code into responsive, visual, living canvases with modern CSS, JavaScript, and Three.js.
+            </p>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="journey-milestone-card">
+            <div class="journey-step-num">04</div>
+            <div class="journey-date">Present &amp; Future</div>
+            <h3 class="journey-step-title">The Startup Builder Mindset</h3>
+            <p class="journey-step-desc">
+              Synthesizing engineering logic with product empathy: building prototypes, studying real user problems, and preparing for future entrepreneurial challenges.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         08 // ACHIEVEMENTS SECTION — HONEST WALL
+         =================================================================== -->
+    <section class="section" id="achievements" style="background-color: var(--bg-soft);">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-kicker">
+            <span class="kicker-line"></span>
+            08 // RECOGNITION
+          </div>
+          <h2 class="section-title">Milestones &amp; Growth</h2>
+          <p class="section-desc">
+            Early stepping stones and milestones achieved on my engineering trajectory.
+          </p>
+        </div>
+
+        <div class="achievements-wall">
+          <div class="achievement-card">
+            <div class="achieve-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+            </div>
+            <h3 class="achieve-title">CSE Academic Admission</h3>
+            <p class="achieve-sub">Secured placement in JECRC University's Computer Science &amp; Engineering program.</p>
+          </div>
+
+          <div class="achievement-card">
+            <div class="achieve-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+            </div>
+            <h3 class="achieve-title">First Full 3D Web Build</h3>
+            <p class="achieve-sub">Successfully architected and deployed this custom WebGL interactive portfolio without templates.</p>
+          </div>
+
+          <div class="achievement-card">
+            <div class="achieve-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            </div>
+            <h3 class="achieve-title">Hackathon Sprint In-Progress</h3>
+            <p class="achieve-sub">Active preparation and project drafting for regional and national student hackathons.</p>
+          </div>
+
+          <div class="achievement-card">
+            <div class="achieve-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            </div>
+            <h3 class="achieve-title">Continuous GitHub Activity</h3>
+            <p class="achieve-sub">Committed to daily code practice, algorithm problem sets, and repository management.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         09 // GITHUB & CODE INTELLIGENCE SECTION
+         =================================================================== -->
+    <section class="section" id="github">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-kicker">
+            <span class="kicker-line"></span>
+            09 // OPEN SOURCE
+          </div>
+          <h2 class="section-title">Code → Experiments → Progress</h2>
+          <p class="section-desc">
+            Public commits, open-source experiments, and development rhythm.
+          </p>
+        </div>
+
+        <div class="github-dashboard">
+          <div class="github-top-bar">
+            <div class="github-profile-pill">
+              <div class="github-avatar">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                </svg>
+              </div>
+              <div>
+                <div class="github-name">Mohit Pareek</div>
+                <div class="github-handle">@mohit-dev-max // Verified Profile</div>
+              </div>
+            </div>
+
+            <a href="https://github.com/mohit-dev-max" target="_blank" rel="noopener noreferrer" class="btn-primary" style="padding: 0.65rem 1.35rem; font-size: 0.85rem;">
+              GitHub ↗
+            </a>
+          </div>
+
+          <!-- Verified Real Repositories Grid (Only Existing Repositories) -->
+          <div class="github-repos-grid" id="github-real-repos">
+            <!-- Real Public Repository -->
+            <div class="repo-card">
+              <div>
+                <div class="repo-card-top">
+                  <span class="repo-name">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+                    PERSONAL-PORTFOLIO
+                  </span>
+                  <span style="font-size:0.7rem; color:var(--text-dim); border:1px solid var(--border-color); padding:0.15rem 0.45rem; border-radius:4px;">Public</span>
+                </div>
+                <p class="repo-desc">Interactive personal 3D creative developer portfolio built with modern HTML5, CSS3, and Three.js.</p>
+              </div>
+              <div class="repo-meta" style="margin-top: 1rem;">
+                <span class="repo-lang-tag"><span class="lang-circle" style="background: var(--red-accent);"></span> HTML / CSS / JS</span>
+                <a href="https://github.com/mohit-dev-max/PERSONAL-PORTFOLIO" target="_blank" rel="noopener noreferrer" style="color:var(--text-white); font-weight:600; font-size:0.78rem;">
+                  GitHub ↗
+                </a>
+              </div>
+            </div>
+
+            <!-- Authentic Placeholder for Upcoming Repositories -->
+            <div class="repo-card" style="border-style: dashed; background: rgba(17, 17, 17, 0.4);">
+              <div>
+                <div class="repo-card-top">
+                  <span class="repo-name" style="color: var(--text-muted);">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 14 14"></polyline></svg>
+                    Upcoming Repositories
+                  </span>
+                  <span style="font-size:0.7rem; color:var(--red-accent); border:1px solid rgba(225,6,0,0.3); padding:0.15rem 0.45rem; border-radius:4px;">Pipeline</span>
+                </div>
+                <p class="repo-desc">Active student coursework, C++ algorithmic problem sets, and web experiments will be synchronized here directly as they are published.</p>
+              </div>
+              <div class="repo-meta" style="margin-top: 1rem;">
+                <span class="repo-lang-tag"><span class="lang-circle" style="background: #333;"></span> In Development</span>
+                <a href="https://github.com/mohit-dev-max" target="_blank" rel="noopener noreferrer" style="color:var(--text-dim); font-size:0.78rem;">
+                  GitHub ↗
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         10 // CURRENTLY LEARNING SECTION
+         =================================================================== -->
+    <section class="section" id="learning" style="background-color: var(--bg-soft);">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-kicker">
+            <span class="kicker-line"></span>
+            10 // EVOLUTION
+          </div>
+          <h2 class="section-title">Currently learning</h2>
+          <p class="section-desc">
+            Technology moves rapidly. Here are the specific areas I am currently exploring, practicing, and synthesizing into new projects.
+          </p>
+        </div>
+
+        <div class="learning-cards-grid">
+          <!-- Item 1 -->
+          <div class="learning-card">
+            <div class="learning-stage-pill">EXPLORING</div>
+            <h3 class="learning-topic-title">Three.js &amp; GLSL Shaders</h3>
+            <p class="learning-topic-desc">Understanding vertex and fragment shaders to build custom spatial lighting and interactive particle physics.</p>
+            <div class="learning-progress-track">
+              <div class="learning-progress-fill" style="width: 45%;"></div>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="learning-card">
+            <div class="learning-stage-pill">PRACTICING</div>
+            <h3 class="learning-topic-title">Advanced DSA in C++</h3>
+            <p class="learning-topic-desc">Mastering tree balancing, graph algorithms, dynamic programming, and asymptotic time/space complexities.</p>
+            <div class="learning-progress-track">
+              <div class="learning-progress-fill" style="width: 60%;"></div>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="learning-card">
+            <div class="learning-stage-pill">LEARNING</div>
+            <h3 class="learning-topic-title">Fullstack Architecture</h3>
+            <p class="learning-topic-desc">Exploring server-side rendering, RESTful API contract design, relational databases, and stateless auth flows.</p>
+            <div class="learning-progress-track">
+              <div class="learning-progress-fill" style="width: 35%;"></div>
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="learning-card">
+            <div class="learning-stage-pill">READING</div>
+            <h3 class="learning-topic-title">Product &amp; User Retention</h3>
+            <p class="learning-topic-desc">Studying lean startup methodologies, user interview frameworks, and friction-free onboarding mechanisms.</p>
+            <div class="learning-progress-track">
+              <div class="learning-progress-fill" style="width: 50%;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         11 // RESUME & LINKEDIN CTA SECTION
+         =================================================================== -->
+    <section class="section" id="resume">
+      <div class="container">
+        <div class="resume-cta-banner">
+          <div>
+            <div class="section-kicker">
+              <span class="kicker-line"></span>
+              11 // VERIFICATION
+            </div>
+            <h2 class="resume-heading">Want the full picture?</h2>
+            <p class="resume-sub">
+              Access my complete academic background, technical skills, and project timeline in a structured format.
+            </p>
+          </div>
+
+          <div class="resume-buttons">
+            <button class="btn-primary btn-open-resume">
+              View Resume ↗
+            </button>
+            <a href="https://www.linkedin.com/in/mohit-pareek-585956427/" target="_blank" rel="noopener noreferrer" class="btn-secondary">
+              LinkedIn ↗
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         12 // CONTACT SECTION & INTERACTIVE TRANSMISSION
+         =================================================================== -->
+    <section class="section" id="contact" style="background-color: var(--bg-soft);">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-info-col">
+            <div>
+              <div class="section-kicker">
+                <span class="kicker-line"></span>
+                12 // TRANSMISSION
+              </div>
+              <h2 class="section-title">Have an idea worth building?</h2>
+              <p class="section-desc">
+                Whether you are a recruiter looking for an ambitious young engineer, a founder discussing a concept, or a fellow student builder—my inbox is always open.
+              </p>
+            </div>
+
+            <div class="contact-direct-card">
+              <div class="direct-label">Direct Email</div>
+              <div class="direct-val">
+                <a href="mailto:mohitpareek.dev@gmail.com" style="color:var(--text-white); text-decoration:none;">
+                  mohitpareek.dev@gmail.com
+                </a>
+              </div>
+              <div style="display:flex; flex-wrap:wrap; gap:0.75rem; margin-top:0.5rem;">
+                <a href="mailto:mohitpareek.dev@gmail.com" class="btn-primary" style="padding:0.45rem 1rem; font-size:0.8rem; gap:0.4rem;">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                  Email CTA (mailto) ↗
+                </a>
+                <button class="btn-copy-email" data-email="mohitpareek.dev@gmail.com" type="button">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                  Copy Email
+                </button>
+              </div>
+            </div>
+
+            <div>
+              <div class="direct-label" style="margin-bottom: 0.75rem;">Verified Profiles &amp; Networks</div>
+              <div class="contact-social-links">
+                <a href="https://github.com/mohit-dev-max" target="_blank" rel="noopener noreferrer" class="social-circle-link" title="GitHub ↗" aria-label="Mohit's GitHub">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                  </svg>
+                </a>
+                <a href="https://www.linkedin.com/in/mohit-pareek-585956427/" target="_blank" rel="noopener noreferrer" class="social-circle-link" title="LinkedIn ↗" aria-label="Mohit's LinkedIn">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                  </svg>
+                </a>
+                <a href="mailto:mohitpareek.dev@gmail.com" class="social-circle-link" title="Email Mohit" aria-label="Email Mohit">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-form-box">
+            <form id="contact-form" action="mailto:mohitpareek.dev@gmail.com" method="POST" enctype="text/plain">
+              <div class="form-group">
+                <label for="contact-name" class="form-label">Your Name</label>
+                <input type="text" id="contact-name" class="form-input" placeholder="e.g. Alex Rivera" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-email" class="form-label">Your Email</label>
+                <input type="email" id="contact-email" class="form-input" placeholder="alex@company.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-topic" class="form-label">Inquiry Type</label>
+                <select id="contact-topic" class="form-input" style="background:#080808; color:var(--text-white);" required>
+                  <option value="internship">Internship Opportunity</option>
+                  <option value="project">Project Collaboration</option>
+                  <option value="startup">Startup Idea Discussion</option>
+                  <option value="technical">General Technical Exchange</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message" class="form-label">Message</label>
+                <textarea id="contact-message" class="form-textarea" placeholder="Tell me about your opportunity, project, or thoughts..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn-primary" style="width: 100%; justify-content: center;">
+                <span>Send Message via Email</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================================================================
+       FOOTER
+       =================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div>
+          <div class="footer-brand">
+            MOHIT<span class="brand-dot"></span>
+          </div>
+          <div class="footer-tagline">
+            Creative Developer · Aspiring Startup Builder
+          </div>
+          <div style="font-size:0.88rem; color:var(--text-muted); margin-top:0.4rem;">
+            <a href="mailto:mohitpareek.dev@gmail.com" style="color:var(--text-white); text-decoration:none;">
+              mohitpareek.dev@gmail.com
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <a href="#about" class="footer-link">About</a>
+          <a href="#skills" class="footer-link">Skills</a>
+          <a href="#projects" class="footer-link">Projects</a>
+          <a href="#ideas" class="footer-link">Ideas</a>
+          <a href="https://github.com/mohit-dev-max" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub ↗</a>
+          <a href="https://www.linkedin.com/in/mohit-pareek-585956427/" target="_blank" rel="noopener noreferrer" class="footer-link">LinkedIn ↗</a>
+          <a href="mailto:mohitpareek.dev@gmail.com" class="footer-link">Email</a>
+          <button class="footer-link btn-open-resume" style="padding:0;">Resume ↗</button>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          © 2026 Mohit Pareek. Built with curiosity &amp; code.
+        </div>
+
+        <div class="footer-clock">
+          <span class="live-dot"></span>
+          <span id="footer-live-time">19:30:00 IST</span>
+        </div>
+
+        <button class="btn-back-top" id="btn-back-to-top" aria-label="Back to Top">
+          Back to Top ↑
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===================================================================
+       RESUME PREVIEW MODAL
+       =================================================================== -->
+  <div class="modal-backdrop" id="resume-modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="resume-modal-title">
+    <div class="modal-container">
+      <button class="modal-close-btn" id="btn-close-resume" aria-label="Close Resume Modal">✕</button>
+
+      <div style="border-bottom: 1px solid var(--border-color); padding-bottom: 1.5rem; margin-bottom: 2rem;">
+        <span style="font-size: 0.75rem; font-weight: 700; color: var(--red-accent); letter-spacing: 0.15em; text-transform: uppercase;">
+          Curriculum Vitae Preview
+        </span>
+        <h2 id="resume-modal-title" style="font-family: var(--font-display); font-size: 2rem; font-weight: 800; color: var(--text-white); margin-top: 0.25rem;">
+          MOHIT PAREEK
+        </h2>
+        <p style="color: var(--text-muted); font-size: 0.95rem;">
+          First-Year B.Tech Computer Science Student &amp; Aspiring Startup Builder · JECRC University
+        </p>
+        <div style="display:flex; flex-wrap:wrap; gap:1rem; margin-top:0.75rem; font-size:0.85rem;">
+          <a href="mailto:mohitpareek.dev@gmail.com" style="color:var(--red-accent);">mohitpareek.dev@gmail.com</a>
+          <a href="https://github.com/mohit-dev-max" target="_blank" rel="noopener noreferrer" style="color:var(--text-white);">GitHub ↗</a>
+          <a href="https://www.linkedin.com/in/mohit-pareek-585956427/" target="_blank" rel="noopener noreferrer" style="color:var(--text-white);">LinkedIn ↗</a>
+        </div>
+      </div>
+
+      <!-- Resume Content Details -->
+      <div style="display: flex; flex-direction: column; gap: 2rem;">
+        <div>
+          <h4 style="font-family: var(--font-display); font-size: 1rem; color: var(--red-accent); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.75rem;">
+            Education
+          </h4>
+          <div style="background: #090909; border: 1px solid var(--border-color); border-radius: 12px; padding: 1.25rem;">
+            <div style="font-weight: 700; color: var(--text-white);">B.Tech in Computer Science &amp; Engineering</div>
+            <div style="color: var(--text-muted); font-size: 0.9rem;">JECRC University, Jaipur · 2024 – 2028 (1st Year)</div>
+            <div style="color: var(--text-dim); font-size: 0.82rem; margin-top: 0.4rem;">
+              Relevant Coursework: Data Structures &amp; Algorithms, Object-Oriented Programming, Discrete Mathematics, Digital Systems.
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h4 style="font-family: var(--font-display); font-size: 1rem; color: var(--red-accent); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.75rem;">
+            Technical Skillset
+          </h4>
+          <div style="background: #090909; border: 1px solid var(--border-color); border-radius: 12px; padding: 1.25rem; font-size: 0.9rem; line-height: 1.7; color: var(--text-muted);">
+            <div><strong style="color:var(--text-white);">Languages:</strong> C, C++, Modern JavaScript (ES6+), Python (Basics)</div>
+            <div><strong style="color:var(--text-white);">Web &amp; Graphics:</strong> HTML5 Semantic Web, Modern CSS3, Three.js / WebGL, Responsive UI Architecture</div>
+            <div><strong style="color:var(--text-white);">Tools &amp; Environments:</strong> Git, GitHub, VS Code, Linux CLI</div>
+            <div><strong style="color:var(--text-white);">Core Interests:</strong> Data Structures, Systems Thinking, Product Ideation, Creative Web Development</div>
+          </div>
+        </div>
+
+        <div>
+          <h4 style="font-family: var(--font-display); font-size: 1rem; color: var(--red-accent); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.75rem;">
+            Highlighted Projects
+          </h4>
+          <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+            <div style="background: #090909; border: 1px solid var(--border-color); border-radius: 10px; padding: 1rem;">
+              <strong style="color: var(--text-white);">Nexus Canvas:</strong> Spatial whiteboard prototype for mapping computer science concepts and dependency flows.
+            </div>
+            <div style="background: #090909; border: 1px solid var(--border-color); border-radius: 10px; padding: 1rem;">
+              <strong style="color: var(--text-white);">AlgoPulse Sandbox:</strong> Step-by-step visual algorithm state animator.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-top: 2.5rem; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; border-top: 1px solid var(--border-color); padding-top: 1.5rem;">
+        <span style="font-size: 0.85rem; color: var(--text-dim);">
+          Configurable PDF download trigger
+        </span>
+        <a href="#contact" class="btn-primary" style="padding: 0.7rem 1.4rem; font-size: 0.85rem;">
+          Download Resume (PDF) ↗
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Root -->
+  <div id="toast-container" aria-live="assertive"></div>
+
+  <!-- ===================================================================
+       SCRIPTS: Three.js, Audio Feedback, Dynamic Canvas, Application
+       =================================================================== -->
+  <script src="vendor/three.min.js"></script>
+  <script src="js/audio.js"></script>
+  <script src="js/three-scene.js"></script>
+  <script src="js/ideas-canvas.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
