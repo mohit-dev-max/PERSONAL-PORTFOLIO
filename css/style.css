@@ -2685,8 +2685,8 @@ ul, ol {
 /* Toast System */
 #toast-container {
   position: fixed;
-  bottom: 2rem;
-  right: 2rem;
+  bottom: 3.5rem;
+  right: 1.5rem;
   z-index: 99999;
   display: flex;
   flex-direction: column;
@@ -2721,6 +2721,94 @@ ul, ol {
   color: var(--red-accent);
   width: 18px;
   height: 18px;
+}
+
+/* ===================================================================
+   SUBTLE CONTRIBUTION WATERMARK (Fixed Bottom-Right)
+   =================================================================== */
+.contribution-watermark {
+  position: fixed;
+  bottom: 1.25rem;
+  right: 1.5rem;
+  z-index: 9990;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.3rem 0.7rem;
+  background: rgba(11, 11, 11, 0.65);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 999px;
+  font-family: var(--font-display);
+  font-size: 0.72rem;
+  letter-spacing: 0.02em;
+  color: rgba(245, 245, 245, 0.5);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s var(--ease-out);
+  user-select: none;
+}
+
+.contribution-watermark:hover {
+  background: rgba(16, 16, 16, 0.9);
+  border-color: rgba(225, 6, 0, 0.35);
+  color: rgba(245, 245, 245, 0.9);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6), 0 0 14px var(--red-glow);
+  transform: translateY(-1px);
+}
+
+.watermark-dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--red-primary);
+  display: inline-block;
+  opacity: 0.8;
+  transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contribution-watermark:hover .watermark-dot {
+  transform: scale(1.25);
+  background: var(--red-accent);
+  box-shadow: 0 0 8px var(--red-accent);
+}
+
+.watermark-text {
+  font-weight: 400;
+  color: rgba(245, 245, 245, 0.5);
+  transition: color 0.3s ease;
+}
+
+.contribution-watermark:hover .watermark-text {
+  color: rgba(245, 245, 245, 0.85);
+}
+
+.watermark-link {
+  color: var(--red-accent);
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  position: relative;
+  transition: color 0.25s ease;
+}
+
+.watermark-link::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 0%;
+  height: 1px;
+  background: var(--red-accent);
+  transition: width 0.25s ease;
+}
+
+.contribution-watermark:hover .watermark-link::after {
+  width: 100%;
+}
+
+.watermark-link:hover {
+  color: #ff524e;
 }
 
 /* ===================================================================
@@ -2798,6 +2886,13 @@ ul, ol {
   .scene-controls-overlay {
     bottom: 1rem;
     right: 1rem;
+  }
+
+  .contribution-watermark {
+    bottom: 0.85rem;
+    right: 0.85rem;
+    font-size: 0.65rem;
+    padding: 0.25rem 0.55rem;
   }
 }
 
