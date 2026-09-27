@@ -2685,7 +2685,7 @@ ul, ol {
 /* Toast System */
 #toast-container {
   position: fixed;
-  bottom: 3.5rem;
+  bottom: 7.25rem;
   right: 1.5rem;
   z-index: 99999;
   display: flex;
@@ -2724,12 +2724,12 @@ ul, ol {
 }
 
 /* ===================================================================
-   SUBTLE CONTRIBUTION WATERMARK (Fixed Bottom-Right)
+   SUBTLE CONTRIBUTION WATERMARK (Fixed Bottom-Right Above Netlify Badge)
    =================================================================== */
 .contribution-watermark {
   position: fixed;
-  bottom: 1.25rem;
-  right: 1.5rem;
+  bottom: 4.5rem;
+  right: 1.25rem;
   z-index: 9990;
   display: inline-flex;
   align-items: center;
@@ -2889,7 +2889,7 @@ ul, ol {
   }
 
   .contribution-watermark {
-    bottom: 0.85rem;
+    bottom: 4.25rem;
     right: 0.85rem;
     font-size: 0.65rem;
     padding: 0.25rem 0.55rem;
